@@ -1,5 +1,5 @@
 class Phenomenon {
-  // for now the phenomenon is just a rectangle
+  // Im Moment ist ein Phänomen ein Rechteck
   constructor(posX, posY, size) {
     this.pos = {x: posX, y: posY}
     this.size = size
@@ -14,7 +14,7 @@ class Phenomenon {
   }
   show() {
     rect(this.pos.x, this.pos.y, this.size)
-    // show attributes
+    // Attribute zeichnen
     push()
     translate(this.pos.x, this.pos.y)
     for (let attribute of this.attributes) {
@@ -25,8 +25,8 @@ class Phenomenon {
 }
 
 class Attribute {
-  // for now the attribute is just a circle,
-  // positioned within the phenomeon
+  // Im Moment ist ein Attribut ein Kreis,
+  // positioniert innerhalb des Phänomens.
   constructor(posX, posY, size) {
     this.pos = {x: posX, y: posY}
     this.size = size
@@ -43,7 +43,7 @@ class Attribute {
   show() {
     ellipseMode(CORNER)
     ellipse(this.pos.x, this.pos.y, this.size)
-    // show artefacts
+    // Artefakte zeichnen
     push()
     translate(this.pos.x, this.pos.y)
     for (let artefact of this.artefacts) {
@@ -54,8 +54,8 @@ class Attribute {
 }
 
 class Artefact {
-  // for now the attribute is just a line,
-  // positioned within an attribute.
+  // Im Moment ist ein Artefakt eine Linie
+  // positioniert in einem Artefakt.
   constructor(startX, startY, endX, endY) {
     this.start = {x: startX, y: startY}
     this.end = {x: endX, y: endY}
