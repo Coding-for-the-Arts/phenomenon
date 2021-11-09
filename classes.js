@@ -7,9 +7,9 @@ class Phenomenon {
     this.attributes = []
     for (let i = 0; i < this.numAttributes; i += 1) {
       let artefactSize = random(20)
-      let x = random(this.size - artefactSize)
-      let y = random(this.size - artefactSize)
-      this.attributes.push(new Attribute(x, y, artefactSize))
+      let x = random(this.size - attributeSize)
+      let y = random(this.size - attributeSize)
+      this.attributes.push(new Attribute(x, y, attributeSize))
     }
   }
   show() {
