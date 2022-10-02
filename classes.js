@@ -6,7 +6,7 @@ class Phenomenon {
     this.numAttributes = round(random(5)) // ?
     this.attributes = []
     for (let i = 0; i < this.numAttributes; i += 1) {
-      let artefactSize = random(20)
+      let attributeSize = random(20)
       let x = random(this.size - attributeSize)
       let y = random(this.size - attributeSize)
       this.attributes.push(new Attribute(x, y, attributeSize))
@@ -55,7 +55,7 @@ class Attribute {
 
 class Artefact {
   // Im Moment ist ein Artefakt eine Linie
-  // positioniert in einem Artefakt.
+  // positioniert in einem Attribut.
   constructor(startX, startY, endX, endY) {
     this.start = {x: startX, y: startY}
     this.end = {x: endX, y: endY}
