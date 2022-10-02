@@ -21,23 +21,23 @@ Im Draw-Loop sollte möglichst wenig Code stehen:
 
 ```
 draw() {
-	background(200) // optional
-	for (let phenomenon of phenomena) {
-        phenomenon.show()
-        phenomenon.move()
-	}
+  background(200) // optional
+  for (let phenomenon of phenomena) {
+    phenomenon.show()
+    phenomenon.move()
+  }
 }
 
 Der Rest wird in den Klassen abgewickelt, z.B.:
 
 class Phenomenon {
-	constructor() {
-		// bla
+  constructor() {
+    // bla
 	}
-	show() {
-		for (let attribute of this.attributes) {
-			attribute.show()
-		}
-	}
+  show() {
+    for (let attribute of this.attributes) {
+      attribute.show()
+    }
+  }
 }
 ```
