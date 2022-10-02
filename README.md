@@ -14,3 +14,30 @@ Du kannst den Code in diesem Repo als Ausganspunkt nutzen, musst aber nicht.
 - Bevor du zu coden beginnst, mache ein paar Handskizzen und bespreche sie mit Vera oder Josef.
 - Benutze Linien, Kreise und Rechtecke
 - Wenn du dich schon sicherer fühlst, kannst du auch mit Pfaden oder Text experimentieren.
+
+## Tipp
+
+Im Draw-Loop sollte möglichst wenig Code stehen:
+
+```
+draw() {
+	background(200) // optional
+	for (let phenomenon of phenomena) {
+        phenomenon.show()
+        phenomenon.move()
+	}
+}
+
+Der Rest wird in den Klassen abgewickelt, z.B.:
+
+class Phenomenon {
+	constructor() {
+		// bla
+	}
+	show() {
+		for (let attribute of this.attributes) {
+			attribute.show()
+		}
+	}
+}
+```
