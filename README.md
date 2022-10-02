@@ -9,7 +9,7 @@ Eine Aufgabe zum Üben von JS-Klassen.
 
 Du kannst den Code in diesem Repo als Ausganspunkt nutzen, musst aber nicht.
 
-## Vorgehen
+## Vorgehen
 
 - Bevor du zu coden beginnst, mache ein paar Handskizzen und bespreche sie mit Vera oder Josef.
 - Benutze Linien, Kreise und Rechtecke
