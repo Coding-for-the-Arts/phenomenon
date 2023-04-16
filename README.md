@@ -15,7 +15,7 @@ Du kannst den Code in diesem Repo als Ausganspunkt nutzen, musst aber nicht.
 - Benutze Linien, Kreise und Rechtecke
 - Wenn du dich schon sicherer fühlst, kannst du auch mit Pfaden oder Text experimentieren.
 
-## Tipp
+## Tipp
 
 Im Draw-Loop sollte möglichst wenig Code stehen:
 
